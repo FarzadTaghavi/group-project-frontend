@@ -5,14 +5,17 @@ import App from "./App"
 import reportWebVitals from "./reportWebVitals"
 import { BrowserRouter as Router } from "react-router-dom"
 import * as dotenv from "dotenv"
+import { AuthProvider } from "./AuthProvider"
 
 dotenv.config()
 
 ReactDOM.render(
   <Router>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <AuthProvider>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </AuthProvider>
   </Router>,
   document.getElementById("root")
 )
