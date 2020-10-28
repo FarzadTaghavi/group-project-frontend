@@ -5,10 +5,12 @@ import "./App.css"
 import Homepage from "./pages/Homepage"
 import SignUp from "./pages/SignUp"
 import Login from "./pages/Login"
+import Navigation from "./components/Navigation"
 
 function App() {
   return (
     <div className="App">
+      <Navigation />
       <Switch>
         <Route exact path="/" component={Homepage} />
         <Route path="/signup" component={SignUp} />
