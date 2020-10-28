@@ -12,7 +12,7 @@ import { Experience } from "../components/Experience"
 
 export default function Homepage() {
   const [graduates, setGraduates] = useState<Graduate[]>([])
-  const [stack, setStack] = useState("")
+  const [jobType, setJobType] = useState("")
 
   useEffect(() => {
     async function fetchData() {
@@ -27,12 +27,12 @@ export default function Homepage() {
   let graduatesToRender: Graduate[] = []
 
   // here's the filter, with a default "" so we can maybe add a "clear filters" or "all" button that sets Stack back to "" so it shows all posts => maybe check that we don't lose the posts along the way. We might need another useState for this
-  if (stack) {
-    if (stack === "") {
+  if (jobType) {
+    if (jobType === "") {
       graduatesToRender = graduates
     } else
       graduatesToRender = graduates.filter((grad) => {
-        return grad.data.techStack === stack
+        return grad.data.jobType === jobType
       })
   }
   // console.log("got the graduates?:", graduates)
@@ -46,9 +46,9 @@ export default function Homepage() {
           job
         </h3>
         <div style={{ flexDirection: "row" }}>
-          <button title="Full Stack" onClick={() => setStack("fullstack")} />
-          <button title="Backend" onClick={() => setStack("backend")} />
-          <button title="Frontend" onClick={() => setStack("frontend")} />
+          <button title="Full Stack" onClick={() => setJobType("fullstack")} />
+          <button title="Backend" onClick={() => setJobType("backend")} />
+          <button title="Frontend" onClick={() => setJobType("frontend")} />
         </div>
       </div>
       {graduatesToRender.map((grad) => {
