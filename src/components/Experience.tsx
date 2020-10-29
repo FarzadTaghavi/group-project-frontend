@@ -4,7 +4,7 @@ import { Card, Accordion, Button, Collapse } from "react-bootstrap";
 
 export const Experience: React.FC<Graduate> = (data) => {
   return (
-    <Card style={{ width: "50%" }}>
+    <Card style={{ width: "80%", marginTop: "100" }}>
       <Card.Body>
         <Accordion>
           <Card>

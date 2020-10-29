@@ -45,9 +45,9 @@ export default function Homepage() {
     <>
       <div className="titleHomepage">
         <h1>Our project name</h1>
-        <h3>
-          Codaisseur graduates sharing their experience in landing their first
-          job
+        <h3 className="description">
+          Codaisseur graduates sharing their <br />
+          experience in landing their first job
         </h3>
         <div style={{ flexDirection: "row" }}>
           <Button
@@ -72,34 +72,35 @@ export default function Homepage() {
           </Button>
         </div>
       </div>
-
-      {graduatesToRender.map((grad) => {
-        return (
-          <Experience
-            key={grad.id}
-            id={grad.id}
-            fullName={grad.fullName}
-            email={grad.email}
-            password={grad.password}
-            education={grad.education}
-            language={grad.language}
-            monthsToJob={grad.monthsToJob}
-            interviews={grad.interviews}
-            jobType={grad.jobType}
-            companyLang={grad.companyLang}
-            companySize={grad.companySize}
-            industry={grad.industry}
-            techStack={grad.techStack}
-            answer1={grad.answer1}
-            answer2={grad.answer2}
-            answer3={grad.answer3}
-            answer4={grad.answer4}
-            answer5={grad.answer5}
-            answer6={grad.answer6}
-            answer7={grad.answer7}
-          />
-        );
-      })}
+      <div className="cards">
+        {graduatesToRender.map((grad) => {
+          return (
+            <Experience
+              key={grad.id}
+              id={grad.id}
+              fullName={grad.fullName}
+              email={grad.email}
+              password={grad.password}
+              education={grad.education}
+              language={grad.language}
+              monthsToJob={grad.monthsToJob}
+              interviews={grad.interviews}
+              jobType={grad.jobType}
+              companyLang={grad.companyLang}
+              companySize={grad.companySize}
+              industry={grad.industry}
+              techStack={grad.techStack}
+              answer1={grad.answer1}
+              answer2={grad.answer2}
+              answer3={grad.answer3}
+              answer4={grad.answer4}
+              answer5={grad.answer5}
+              answer6={grad.answer6}
+              answer7={grad.answer7}
+            />
+          );
+        })}
+      </div>
     </>
   );
 }
