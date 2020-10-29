@@ -1,25 +1,31 @@
-import Axios from "axios"
-import React, { useState } from "react"
-import { API_URL } from "./config/constants"
-import { Graduate } from "./model"
+import Axios from "axios";
+import React, { useState, useEffect } from "react";
+import { parseJsonText, StringLiteralType } from "typescript";
+import { API_URL } from "./config/constants";
+import { Graduate } from "./model";
 
 export const AuthContext = React.createContext<{
-  graduate: Graduate | null
-  token: string | null
-  login: (email: string, password: string) => void
-  logout: () => void
+  graduate: Graduate | null;
+  token: string | null;
+  login: (email: string, password: string) => void;
+  logout: () => void;
 }>({
   graduate: null,
   token: null,
   login: () => {},
   logout: () => {},
-})
+});
 
 interface AuthProviderProps {}
 
 export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
-  const [graduate, setGraduate] = useState<Graduate | null>(null)
-  const [token, setToken] = useState<string | null>(null)
+  const [graduate, setGraduate] = useState<Graduate | null>(null);
+  const [token, setToken] = useState<string | null>(null);
+
+  useEffect(() => {
+    const checkForToken = localStorage.getItem("token");
+    setToken(checkForToken);
+  }, []);
 
   return (
     <AuthContext.Provider
@@ -31,22 +37,25 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
             const response = await Axios.post(`${API_URL}/login`, {
               email,
               password,
-            })
-            setGraduate(response.data.user)
-            setToken(response.data.token)
-            localStorage.setItem("graduate", JSON.stringify(response.data.user))
-            localStorage.setItem("token", response.data.token)
+            });
+            setGraduate(response.data.user);
+            setToken(response.data.token);
+            localStorage.setItem(
+              "graduate",
+              JSON.stringify(response.data.user)
+            );
+            localStorage.setItem("token", response.data.token);
           } catch (e) {
-            console.log("error:", e)
+            console.log("error:", e);
           }
         },
         logout: () => {
-          setGraduate(null)
-          localStorage.removeItem("graduate")
+          setToken(null);
+          localStorage.removeItem("token");
         },
       }}
     >
       {children}
     </AuthContext.Provider>
-  )
-}
+  );
+};

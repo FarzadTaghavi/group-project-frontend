@@ -1,5 +1,5 @@
-import React from "react"
-import { Graduate } from "../model"
+import React from "react";
+import { Graduate } from "../model";
 
 /**
 Data to add to the post / card:
@@ -15,7 +15,7 @@ Company size (start-up / scale-up / medium / big)
 Technologies used at company
  */
 
-export const Experience: React.FC<Graduate> = ({ data }) => {
+export const Experience: React.FC<Graduate> = (data) => {
   return (
     <div>
       <div>
@@ -53,5 +53,5 @@ export const Experience: React.FC<Graduate> = ({ data }) => {
         <p>{data.answer7}</p>
       </div>
     </div>
-  )
-}
+  );
+};
