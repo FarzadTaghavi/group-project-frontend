@@ -1,4 +1,4 @@
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -35,4 +35,20 @@
   to {
     transform: rotate(360deg);
   }
-} */
+}
+
+.redButton {
+  background-color: #c1272d;
+  color: white;
+  border-radius: 24px;
+  border: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px;
+}

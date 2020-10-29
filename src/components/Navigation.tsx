@@ -15,7 +15,7 @@ export default function Navigation() {
       {token ? (
         <>
           <Nav.Item className="log">
-            <Button className="navButton" onClick={logout}>
+            <Button bsPrefix="redButton" onClick={logout}>
               Logout
             </Button>
           </Nav.Item>
@@ -25,14 +25,14 @@ export default function Navigation() {
           <div className="sign">
             <Nav.Item>
               <Nav.Link as={NavLink} to="/signup">
-                <Button className="navButton">Sign Up</Button>
+                <Button bsPrefix="redButton">Sign Up</Button>
               </Nav.Link>
             </Nav.Item>
           </div>
           <div>
             <Nav.Item className="log">
               <Nav.Link as={NavLink} to="/login">
-                <Button className="navButton">Log in</Button>
+                <Button bsPrefix="redButton">Log in</Button>
               </Nav.Link>
             </Nav.Item>
           </div>

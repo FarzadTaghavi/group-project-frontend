@@ -4,6 +4,7 @@ import { Graduate } from "../model";
 import { API_URL } from "../config/constants";
 import { Experience } from "../components/Experience";
 import Button from "react-bootstrap/Button";
+require("./Homepage.css");
 
 /***
  * To do:
@@ -42,7 +43,7 @@ export default function Homepage() {
 
   return (
     <>
-      <div>
+      <div className="titleHomepage">
         <h1>Our project name</h1>
         <h3>
           Codaisseur graduates sharing their experience in landing their first
@@ -50,23 +51,28 @@ export default function Homepage() {
         </h3>
         <div style={{ flexDirection: "row" }}>
           <Button
-            variant="primary"
             title="Full Stack"
             onClick={() => setJobType("Fullstack")}
+            bsPrefix="redButton"
           >
             Full Stack
           </Button>
-          <Button variant="primary" onClick={() => setJobType("Backend")}>
+          <Button bsPrefix="redButton" onClick={() => setJobType("Backend")}>
             Backend
           </Button>
-          <Button variant="primary" onClick={() => setJobType("Frontend")}>
+          <Button bsPrefix="redButton" onClick={() => setJobType("Frontend")}>
             Frontend
           </Button>
-          <Button variant="primary" title="any" onClick={() => setJobType("")}>
+          <Button
+            bsPrefix="redButton"
+            title="any"
+            onClick={() => setJobType("")}
+          >
             Any
           </Button>
         </div>
       </div>
+
       {graduatesToRender.map((grad) => {
         return (
           <Experience
