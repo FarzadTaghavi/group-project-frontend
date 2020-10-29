@@ -1,6 +1,6 @@
-import React from "react"
-import { Graduate } from "../model"
-
+import React from "react";
+import { Graduate } from "../model";
+  
 export const Experience: React.FC<Graduate> = (data) => {
   return (
     <div>
@@ -39,5 +39,5 @@ export const Experience: React.FC<Graduate> = (data) => {
         <p>{data.answer7}</p>
       </div>
     </div>
-  )
-}
+  );
+};

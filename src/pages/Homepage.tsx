@@ -5,6 +5,7 @@ import { API_URL } from "../config/constants"
 import { Experience } from "../components/Experience"
 import Button from "react-bootstrap/Button"
 
+
 /***
  * To do:
  * - styling
@@ -13,17 +14,18 @@ import Button from "react-bootstrap/Button"
 // console.log("URL:", API_URL)
 
 export default function Homepage() {
-  const [graduates, setGraduates] = useState<Graduate[]>([])
-  const [jobType, setJobType] = useState("")
+  const [graduates, setGraduates] = useState<Graduate[]>([]);
+  const [jobType, setJobType] = useState("");
 
   useEffect(() => {
     async function fetchData() {
-      const response = await axios.get(`${API_URL}/`)
-      // console.log("response from axios:", response.data)
-      setGraduates(response.data)
+
+      const response = await axios.get(`${API_URL}`);
+      // console.log("response from axios:", response)
+      setGraduates(response.data);
     }
-    fetchData()
-  }, [])
+    fetchData();
+  }, []);
 
   // declaring this variable so we can filter over it, and let TS know it's gonna have an array of Grads
   let graduatesToRender: Graduate[] = graduates
@@ -35,6 +37,7 @@ export default function Homepage() {
     })
   } else if (jobType === "") {
     graduatesToRender = graduates
+
   }
 
   // console.log("got the graduates?:", graduatesToRender)
@@ -68,6 +71,7 @@ export default function Homepage() {
         </div>
       </div>
       {graduatesToRender.map((grad) => {
+
         return (
           <Experience
             id={grad.id}
@@ -90,8 +94,8 @@ export default function Homepage() {
             answer6={grad.answer6}
             answer7={grad.answer7}
           />
-        )
+        );
       })}
     </>
-  )
+  );
 }
