@@ -1,10 +1,9 @@
-import axios from "axios"
-import React, { useEffect, useState } from "react"
-import { Graduate } from "../model"
-import { API_URL } from "../config/constants"
-import { Experience } from "../components/Experience"
-import Button from "react-bootstrap/Button"
-
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { Graduate } from "../model";
+import { API_URL } from "../config/constants";
+import { Experience } from "../components/Experience";
+import Button from "react-bootstrap/Button";
 
 /***
  * To do:
@@ -19,7 +18,6 @@ export default function Homepage() {
 
   useEffect(() => {
     async function fetchData() {
-
       const response = await axios.get(`${API_URL}`);
       // console.log("response from axios:", response)
       setGraduates(response.data);
@@ -28,16 +26,15 @@ export default function Homepage() {
   }, []);
 
   // declaring this variable so we can filter over it, and let TS know it's gonna have an array of Grads
-  let graduatesToRender: Graduate[] = graduates
+  let graduatesToRender: Graduate[] = graduates;
 
   // here's the filter, with a default "" so we can maybe add a "clear filters" or "all" button that sets Stack back to "" so it shows all posts => maybe check that we don't lose the posts along the way. We might need another useState for this
   if (jobType) {
     graduatesToRender = graduates.filter((grad) => {
-      return grad.jobType === jobType
-    })
+      return grad.jobType === jobType;
+    });
   } else if (jobType === "") {
-    graduatesToRender = graduates
-
+    graduatesToRender = graduates;
   }
 
   // console.log("got the graduates?:", graduatesToRender)
@@ -71,9 +68,9 @@ export default function Homepage() {
         </div>
       </div>
       {graduatesToRender.map((grad) => {
-
         return (
           <Experience
+            key={grad.id}
             id={grad.id}
             fullName={grad.fullName}
             email={grad.email}
@@ -83,6 +80,7 @@ export default function Homepage() {
             monthsToJob={grad.monthsToJob}
             interviews={grad.interviews}
             jobType={grad.jobType}
+            companyLang={grad.companyLang}
             companySize={grad.companySize}
             industry={grad.industry}
             techStack={grad.techStack}

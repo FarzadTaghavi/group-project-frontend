@@ -1,11 +1,12 @@
-import React from "react"
-import { Switch, Route } from "react-router-dom"
+import React from "react";
+import { Switch, Route } from "react-router-dom";
 
-import "./App.css"
-import Homepage from "./pages/Homepage"
-import SignUp from "./pages/SignUp"
-import Login from "./pages/Login"
-import Navigation from "./components/Navigation"
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Homepage from "./pages/Homepage";
+import SignUp from "./pages/SignUp";
+import Login from "./pages/Login";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="/login" component={Login} />
       </Switch>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
