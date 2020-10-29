@@ -2,40 +2,32 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* position: fixed; */
+  position: fixed;
+  z-index: 2;
   width: 100%;
   align-items: center;
   flex-wrap: nowrap;
   font-family: "Open Sans", sans-serif;
-  height: 66px;
-  padding: 10px 20px 10px 20px;
+  height: 80px;
+  padding: 10px 20px;
   border-bottom: 1px solid #d8d8d8;
+  background-color: white;
 }
 
 .title {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
   font-size: 30px;
+  margin-bottom: 10px;
 }
 
 .log {
   margin-left: auto;
+  margin-bottom: 10px;
 }
 
 .sign {
   margin-left: auto;
-}
-
-.navButton {
-  background-color: #c1272d;
-  border-radius: 24px;
-  border: none;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 10px 25px;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 5px 0px;
+  padding: 60px 0px;
+  margin-bottom: 10px;
 }
