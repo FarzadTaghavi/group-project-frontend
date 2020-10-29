@@ -1,21 +1,7 @@
 import React from "react"
 import { Graduate } from "../model"
 
-/**
-Data to add to the post / card:
-
-Do you speak Dutch?
-What’s your education level?
-How many interviews did you have before you landed a job? (STRING)
-How much time did it get to land a job after graduating?
-Current job type (front/back/fullstack)
-Industry (for example, tech/finance/health/energy)
-Company language (English/Dutch/Other)
-Company size (start-up / scale-up / medium / big)
-Technologies used at company
- */
-
-export const Experience: React.FC<Graduate> = ({ data }) => {
+export const Experience: React.FC<Graduate> = (data) => {
   return (
     <div>
       <div>

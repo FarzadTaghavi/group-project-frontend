@@ -13,7 +13,7 @@ export default function Navigation() {
       {token ? (
         <>
           <Nav.Item style={{ padding: ".5rem 1rem" }}>
-            {graduate?.data.fullName}
+            {graduate?.fullName}
           </Nav.Item>
           <Button onClick={logout}>Logout</Button>
         </>
