@@ -27,27 +27,32 @@ export default function LogIn() {
   };
 
   return (
-    <Form as={Col} md={{ span: 6, offset: 3 }}>
-      <h1 className="mt-5 mb-5">Log In</h1>
-      <Form.Group>
-        <Form.Label>Email </Form.Label>
-        <Form.Control
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-          type="email"
-          placeholder="Enter email"
-        />
-        <br />
-        <Form.Label>Password </Form.Label>
-        <Form.Control
-          value={password}
-          onChange={(event) => setPassword(event.target.value)}
-          type="password"
-          placeholder="Enter password"
-        />
-        <br />
-        <Button onClick={submitForm}>Log In</Button>
-      </Form.Group>
-    </Form>
+    <div className="loginTitle">
+      <Form>
+        <h1 className="login">Log In</h1>
+        <br></br>
+        <Form.Group className="descriptionLogin">
+          <Form.Label>Email </Form.Label>
+          <Form.Control
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+            type="email"
+            placeholder="Enter email"
+          />
+          <br />
+          <Form.Label>Password </Form.Label>
+          <Form.Control
+            value={password}
+            onChange={(event) => setPassword(event.target.value)}
+            type="password"
+            placeholder="Enter password"
+          />
+          <br />
+          <Button bsPrefix="redButton" onClick={submitForm}>
+            Log In
+          </Button>
+        </Form.Group>
+      </Form>
+    </div>
   );
 }

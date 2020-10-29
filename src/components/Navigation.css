@@ -28,6 +28,10 @@
 
 .sign {
   margin-left: auto;
-  padding: 60px 0px;
   margin-bottom: 10px;
+}
+
+.nav-link {
+  display: block;
+  padding: 0rem;
 }

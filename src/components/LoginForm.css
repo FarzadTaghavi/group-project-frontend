@@ -1,0 +1,23 @@
+.loginTitle {
+  margin-top: 175px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.descriptionLogin {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+.login {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
