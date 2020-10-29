@@ -1,5 +1,4 @@
 import React, { useState, useContext, useEffect } from "react";
-import "./style.css";
 import { Form, Col, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import { AuthContext } from "../AuthProvider";

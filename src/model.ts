@@ -8,6 +8,7 @@ export type Graduate = {
   monthsToJob: number;
   interviews: string;
   jobType: string;
+  companyLang: string;
   companySize: string;
   industry: string;
   techStack: string;
