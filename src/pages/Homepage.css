@@ -16,8 +16,26 @@
 }
 
 .cards {
-  margin-top: 400px;
+  margin-top: 500px;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.carousel {
+  margin-top: 550px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+}
+
+.experience {
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
