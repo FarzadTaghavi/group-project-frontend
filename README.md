@@ -22,11 +22,9 @@ Or go straight to our website:
 
 - <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code> TypeScript
 
-
 - <code><img height="20" src="https://w7.pngwing.com/pngs/559/367/png-transparent-postgresql-object-relational-database-oracle-database-freebsd-icon-text-logo-head.png"> PostgreSQL
 
 - <code><img height="20" src="https://codeandunicorns.com/wp-content/uploads/2017/11/node-express.png"> Express.js
-
 
 ### Frontend
 
@@ -35,8 +33,6 @@ TypeScript
 
 - <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
 React
-
-
 
 ## Documentation
 
