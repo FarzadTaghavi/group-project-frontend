@@ -9,7 +9,9 @@ Like the great sir Newton said: “If I have seen further than others, it is by 
 This project captures the empowering spirit of Codaisseur and provides a platform where graduates can share their most valuable insights. We have set out a questionnaire among those graduates who have already landed their first job to find out their secret to success. To guide future students in their quest for employment, we present this information in true Codaisseur style. Have a look at our demo below!
 
 ## Demo
-
+![Homepage](https://github.com/FarzadTaghavi/group-project-frontend/blob/development/assets/Screenshot_2020-10-30%20React%20App(1).png)
+![Sign up](https://github.com/FarzadTaghavi/group-project-frontend/blob/development/assets/Screenshot_2020-10-30%20React%20App(2).png)
+![Log in](https://github.com/FarzadTaghavi/group-project-frontend/blob/development/assets/Screenshot_2020-10-30%20React%20App(3).png)
 
 ## Stack:
 
