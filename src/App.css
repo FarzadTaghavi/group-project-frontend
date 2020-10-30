@@ -36,3 +36,59 @@
     transform: rotate(360deg);
   }
 }
+
+.redButton {
+  background-color: #c1272d;
+  color: white;
+  border-radius: 24px;
+  border: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 30px 10px;
+}
+
+.redButton:focus {
+  outline: 0;
+  background-color: #f6464e;
+}
+
+.custom-card {
+  /* width: 60rem; */
+  max-width: 60rem;
+  margin: 20px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(186, 186, 186, 0.62);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(186, 186, 186, 0.62);
+  box-shadow: 10px 10px 5px 0px rgba(186, 186, 186, 0.62);
+  margin-bottom: 60px;
+  border-radius: 6px;
+}
+
+.accordion-width {
+  width: 100%;
+  padding: 0;
+  background-color: #fbf9f9;
+  border: none;
+}
+
+.QA {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card2 {
+  display: flex;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fbf9f9;
+  padding-right: 20px;
+}
