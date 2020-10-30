@@ -8,6 +8,9 @@ Like the great sir Newton said: “If I have seen further than others, it is by 
 
 This project captures the empowering spirit of Codaisseur and provides a platform where graduates can share their most valuable insights. We have set out a questionnaire among those graduates who have already landed their first job to find out their secret to success. To guide future students in their quest for employment, we present this information in true Codaisseur style. Have a look at our demo below!
 
+Or go straight to our website:
+![CodaShare](https://adoring-varahamihira-27939f.netlify.app/)
+
 ## Demo
 ![Homepage](https://github.com/FarzadTaghavi/group-project-frontend/blob/development/assets/Screenshot_2020-10-30%20React%20App(1).png)
 ![Sign up](https://github.com/FarzadTaghavi/group-project-frontend/blob/development/assets/Screenshot_2020-10-30%20React%20App(2).png)
@@ -20,7 +23,9 @@ This project captures the empowering spirit of Codaisseur and provides a platfor
 - <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code> TypeScript
 
 
-- Express
+- <code><img height="20" src="https://w7.pngwing.com/pngs/559/367/png-transparent-postgresql-object-relational-database-oracle-database-freebsd-icon-text-logo-head.png" PostgreSQL
+
+- <code><img height="20" src="https://codeandunicorns.com/wp-content/uploads/2017/11/node-express.png"> Express.js
 
 
 ### Frontend
