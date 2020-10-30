@@ -1,6 +1,6 @@
-/* .App {
+.App {
   text-align: center;
-} */
+}
 
 .App-logo {
   height: 40vmin;
@@ -59,7 +59,9 @@
 }
 
 .custom-card {
-  width: 60rem;
+  /* width: 60rem; */
+  max-width: 60rem;
+  margin: 20px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(186, 186, 186, 0.62);
   -moz-box-shadow: 10px 10px 5px 0px rgba(186, 186, 186, 0.62);
   box-shadow: 10px 10px 5px 0px rgba(186, 186, 186, 0.62);
