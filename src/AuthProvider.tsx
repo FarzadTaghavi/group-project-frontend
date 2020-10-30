@@ -1,6 +1,5 @@
 import Axios from "axios";
 import React, { useState, useEffect } from "react";
-import { parseJsonText, StringLiteralType } from "typescript";
 import { API_URL } from "./config/constants";
 import { Graduate } from "./model";
 
