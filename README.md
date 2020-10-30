@@ -12,7 +12,7 @@ Or go straight to our website:
 ![CodaShare](https://adoring-varahamihira-27939f.netlify.app/)
 
 ## Demo
-![Homepage](https://github.com/FarzadTaghavi/group-project-frontend/blob/development/assets/Screenshot_2020-10-30%20React%20App(1).png)
+![Homepage](https://github.com/FarzadTaghavi/group-project-frontend/blob/development/assets/Screenshot_2020-10-30%20React%20App.png)
 ![Sign up](https://github.com/FarzadTaghavi/group-project-frontend/blob/development/assets/Screenshot_2020-10-30%20React%20App(2).png)
 ![Log in](https://github.com/FarzadTaghavi/group-project-frontend/blob/development/assets/Screenshot_2020-10-30%20React%20App(3).png)
 
