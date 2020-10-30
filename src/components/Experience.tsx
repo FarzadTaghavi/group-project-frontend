@@ -1,6 +1,6 @@
-import React from "react"
-import { Graduate } from "../model"
-import { Card, Accordion, Button, Collapse } from "react-bootstrap"
+import React from "react";
+import { Graduate } from "../model";
+import { Card, Accordion, Button } from "react-bootstrap";
 
 export const Experience: React.FC<Graduate> = (data) => {
   return (
@@ -42,7 +42,13 @@ export const Experience: React.FC<Graduate> = (data) => {
                     <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
                       Do you speak Dutch?
                     </Card.Text>
-                    <Card.Text style={{ width: "70%", marginLeft: "20px" }}>
+                    <Card.Text
+                      style={{
+                        width: "70%",
+                        marginLeft: "20px",
+                        marginBottom: "10px",
+                      }}
+                    >
                       {data.language}
                     </Card.Text>
                   </div>
@@ -50,7 +56,13 @@ export const Experience: React.FC<Graduate> = (data) => {
                     <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
                       What’s your education level?
                     </Card.Text>
-                    <Card.Text style={{ width: "70%", marginLeft: "20px" }}>
+                    <Card.Text
+                      style={{
+                        width: "70%",
+                        marginLeft: "20px",
+                        marginBottom: "10px",
+                      }}
+                    >
                       {data.education}
                     </Card.Text>
                   </div>
@@ -58,7 +70,13 @@ export const Experience: React.FC<Graduate> = (data) => {
                     <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
                       How many interviews did you have before you landed a job?
                     </Card.Text>
-                    <Card.Text style={{ width: "70%", marginLeft: "20px" }}>
+                    <Card.Text
+                      style={{
+                        width: "70%",
+                        marginLeft: "20px",
+                        marginBottom: "10px",
+                      }}
+                    >
                       {data.interviews}
                     </Card.Text>
                   </div>
@@ -66,7 +84,13 @@ export const Experience: React.FC<Graduate> = (data) => {
                     <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
                       How much time did it get to land a job after graduating?
                     </Card.Text>
-                    <Card.Text style={{ width: "70%", marginLeft: "20px" }}>
+                    <Card.Text
+                      style={{
+                        width: "70%",
+                        marginLeft: "20px",
+                        marginBottom: "10px",
+                      }}
+                    >
                       {data.monthsToJob}
                     </Card.Text>
                   </div>
@@ -74,7 +98,13 @@ export const Experience: React.FC<Graduate> = (data) => {
                     <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
                       Current job type{" "}
                     </Card.Text>
-                    <Card.Text style={{ width: "70%", marginLeft: "20px" }}>
+                    <Card.Text
+                      style={{
+                        width: "70%",
+                        marginLeft: "20px",
+                        marginBottom: "10px",
+                      }}
+                    >
                       {data.jobType}
                     </Card.Text>
                   </div>
@@ -82,7 +112,13 @@ export const Experience: React.FC<Graduate> = (data) => {
                     <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
                       Industry
                     </Card.Text>
-                    <Card.Text style={{ width: "70%", marginLeft: "20px" }}>
+                    <Card.Text
+                      style={{
+                        width: "70%",
+                        marginLeft: "20px",
+                        marginBottom: "10px",
+                      }}
+                    >
                       {data.industry}
                     </Card.Text>
                   </div>
@@ -90,7 +126,13 @@ export const Experience: React.FC<Graduate> = (data) => {
                     <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
                       Company language
                     </Card.Text>
-                    <Card.Text style={{ width: "70%", marginLeft: "20px" }}>
+                    <Card.Text
+                      style={{
+                        width: "70%",
+                        marginLeft: "20px",
+                        marginBottom: "10px",
+                      }}
+                    >
                       {data.companyLang}
                     </Card.Text>
                   </div>
@@ -98,59 +140,141 @@ export const Experience: React.FC<Graduate> = (data) => {
                     <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
                       Company size
                     </Card.Text>
-                    <Card.Text style={{ width: "70%", marginLeft: "20px" }}>
+                    <Card.Text
+                      style={{
+                        width: "70%",
+                        marginLeft: "20px",
+                        marginBottom: "10px",
+                      }}
+                    >
                       {data.companySize}
                     </Card.Text>
                   </div>
                   <div className="QA">
-                    <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
+                    <Card.Text
+                      style={{
+                        width: "30%",
+                        fontWeight: "bold",
+                        paddingBottom: "20px",
+                      }}
+                    >
                       TechStack
                     </Card.Text>
-                    <Card.Text style={{ width: "70%", marginLeft: "20px" }}>
+                    <Card.Text
+                      style={{
+                        width: "70%",
+                        marginLeft: "20px",
+                        marginBottom: "10px",
+                      }}
+                    >
                       {data.techStack}
                     </Card.Text>
                   </div>
                 </div>
               </Accordion.Toggle>
             </Card.Header>
-            <Accordion.Collapse eventKey="0">
-              <Card.Body>
-                <div>
-                  <h4>How did you find the job?</h4>
-                  <p>{data.answer1}</p>
+            <Accordion.Collapse className="card2" eventKey="0">
+              <Card.Body style={{ padding: "10px" }}>
+                <div className="QA">
+                  <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
+                    How did you find the job?
+                  </Card.Text>
+                  <Card.Text
+                    style={{
+                      width: "70%",
+                      marginLeft: "20px",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    {data.answer1}
+                  </Card.Text>
                 </div>
-                <div>
-                  <h4>
+                <div className="QA">
+                  <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
                     Do you know why your candidacy was rejected? If yes, could
                     you share what it was?
-                  </h4>
-                  <p>{data.answer2}</p>
+                  </Card.Text>
+                  <Card.Text
+                    style={{
+                      width: "70%",
+                      marginLeft: "20px",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    {data.answer2}
+                  </Card.Text>
                 </div>
-                <div>
-                  <h4>
+                <div className="QA">
+                  <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
                     What do you think was the decisive factor for you to get
                     hired?
-                  </h4>
-                  <p>{data.answer3}</p>
+                  </Card.Text>
+                  <Card.Text
+                    style={{
+                      width: "70%",
+                      marginLeft: "20px",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    {data.answer3}
+                  </Card.Text>
                 </div>
-                <div>
-                  <h4>What was your biggest struggle and why?</h4>
-                  <p>{data.answer4}</p>
+                <div className="QA">
+                  <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
+                    What was your biggest struggle and why?
+                  </Card.Text>
+                  <Card.Text
+                    style={{
+                      width: "70%",
+                      marginLeft: "20px",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    {data.answer4}
+                  </Card.Text>
                 </div>
-                <div>
-                  <h4>What would you do differently next time (and why)?</h4>
-                  <p>{data.answer5}</p>
+                <div className="QA">
+                  <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
+                    What would you do differently next time (and why)?
+                  </Card.Text>
+                  <Card.Text
+                    style={{
+                      width: "70%",
+                      marginLeft: "20px",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    {data.answer5}
+                  </Card.Text>
                 </div>
-                <div>
-                  <h4>
+                <div className="QA">
+                  <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
                     What tips and/or do’s and don’ts do you have for future
                     students/graduates?
-                  </h4>
-                  <p>{data.answer6}</p>
+                  </Card.Text>
+                  <Card.Text
+                    style={{
+                      width: "70%",
+                      marginLeft: "20px",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    {data.answer6}
+                  </Card.Text>
                 </div>
-                <div>
-                  <h4>What else would you like to share?</h4>
-                  <p>{data.answer7}</p>
+                <div className="QA">
+                  <Card.Text style={{ width: "30%", fontWeight: "bold" }}>
+                    What else would you like to share?
+                  </Card.Text>
+                  <Card.Text
+                    style={{
+                      width: "70%",
+                      marginLeft: "20px",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    {data.answer7}
+                  </Card.Text>
                 </div>
               </Card.Body>
             </Accordion.Collapse>
@@ -158,5 +282,5 @@ export const Experience: React.FC<Graduate> = (data) => {
         </Accordion>
       </Card.Body>
     </Card>
-  )
-}
+  );
+};
