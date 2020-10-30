@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Form from "react-bootstrap/Form";
+import { useHistory } from "react-router-dom";
 
 import Button from "react-bootstrap/Button";
 import axios from "axios";
-
+import { AuthContext } from "../AuthProvider";
 import { API_URL } from "../config/constants";
+
 console.log(API_URL);
 
 export default function SignUp() {
@@ -27,6 +29,15 @@ export default function SignUp() {
   const [answer5, setAnswer5] = useState("");
   const [answer6, setAnswer6] = useState("");
   const [answer7, setAnswer7] = useState("");
+
+  const { token } = useContext(AuthContext);
+  const history = useHistory();
+
+  useEffect(() => {
+    if (token !== null) {
+      history.push("/login");
+    }
+  }, [token, history]);
 
   const submitForm = async (event: any) => {
     event.preventDefault();
@@ -59,6 +70,22 @@ export default function SignUp() {
     setFullName("");
     setEmail("");
     setPassword("");
+    setLanguage("");
+    setEducation("");
+    setInterviews("");
+    setMonthsToJob(0);
+    setJobType("");
+    setIndustry("");
+    setCompanyLang("");
+    setCompanySize("");
+    setTechStack("");
+    setAnswer1("");
+    setAnswer2("");
+    setAnswer3("");
+    setAnswer4("");
+    setAnswer5("");
+    setAnswer6("");
+    setAnswer7("");
   };
 
   return (
