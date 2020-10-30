@@ -10,7 +10,8 @@ export default function Navigation() {
   return (
     <Navbar className="navbar">
       <Navbar.Brand className="title" as={NavLink} to="/">
-        Our project
+        CodaShare <br></br>
+        <p className="tagline">student.toEmployee()</p>
       </Navbar.Brand>
       {token ? (
         <>

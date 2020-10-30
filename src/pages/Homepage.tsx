@@ -44,7 +44,7 @@ export default function Homepage() {
   return (
     <>
       <div className="titleHomepage">
-        <h1>Our project name</h1>
+        <h1>CodaShare</h1>
         <h3 className="description">
           Codaisseur graduates sharing their <br />
           experience in landing their first job
