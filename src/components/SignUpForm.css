@@ -21,3 +21,9 @@
   font-weight: 700;
   font-size: 30px;
 }
+
+.inputSize {
+  height: 100px;
+  width: 100%;
+  outline: none;
+}

@@ -73,7 +73,7 @@ export default function SignUp() {
               value={fullName}
               onChange={(event) => setFullName(event.target.value)}
               type="text"
-              placeholder=""
+              placeholder="Enter name"
               required
             />
           </Form.Group>
@@ -84,7 +84,7 @@ export default function SignUp() {
               value={email}
               onChange={(event) => setEmail(event.target.value)}
               type="text"
-              placeholder=""
+              placeholder="Enter email"
             />
           </Form.Group>
           <Form.Group>
@@ -93,7 +93,7 @@ export default function SignUp() {
               value={password}
               onChange={(event) => setPassword(event.target.value)}
               type="text"
-              placeholder=""
+              placeholder="Enter password"
             />
           </Form.Group>
 
@@ -103,7 +103,7 @@ export default function SignUp() {
               value={language}
               onChange={(event) => setLanguage(event.target.value)}
               type="text"
-              placeholder=""
+              placeholder="Yes / No"
             />
           </Form.Group>
 
@@ -113,31 +113,31 @@ export default function SignUp() {
               value={education}
               onChange={(event) => setEducation(event.target.value)}
               type="text"
-              placeholder=""
+              placeholder="e.g. high school - university"
             />
           </Form.Group>
 
           <Form.Group>
-            <Form.Label>
-              How many interviews did you have before you landed a job?{" "}
-            </Form.Label>
+            <Form.Label>How many interviews did you have? </Form.Label>
             <Form.Control
               value={interviews}
               onChange={(event) => setInterviews(event.target.value)}
-              type="text"
-              placeholder=""
+              placeholder="How many interviews did you have in total"
+              as="textarea"
+              bsPrefix="inputSize"
             />
           </Form.Group>
 
           <Form.Group>
-            <Form.Label>
-              How much time did it get to land a job after graduating?{" "}
-            </Form.Label>
+            <Form.Label>How many months to your first job? </Form.Label>
             <Form.Control
               as="select"
               onChange={(event) => setMonthsToJob(parseInt(event.target.value))}
               defaultValue=""
             >
+              <option value="" disabled>
+                Select amount of months
+              </option>
               <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -149,13 +149,20 @@ export default function SignUp() {
           </Form.Group>
 
           <Form.Group>
-            <Form.Label>Current job type? </Form.Label>
+            <Form.Label>Current job type </Form.Label>
             <Form.Control
-              value={jobType}
+              as="select"
+              defaultValue=""
               onChange={(event) => setJobType(event.target.value)}
-              type="text"
-              placeholder=""
-            />
+            >
+              <option value="" disabled>
+                Select an option
+              </option>
+              <option value="Fullstack">Fullstack</option>
+              <option value="Backend">Backend</option>
+              <option value="Frontend">Frontend</option>
+              <option value="Any">Any</option>
+            </Form.Control>
           </Form.Group>
 
           <Form.Group>
@@ -164,7 +171,7 @@ export default function SignUp() {
               value={industry}
               onChange={(event) => setIndustry(event.target.value)}
               type="text"
-              placeholder=""
+              placeholder="e.g. Tech / Healtcare / Finance"
             />
           </Form.Group>
 
@@ -174,7 +181,7 @@ export default function SignUp() {
               value={companyLang}
               onChange={(event) => setCompanyLang(event.target.value)}
               type="text"
-              placeholder=""
+              placeholder="e.g. English / Dutch"
             />
           </Form.Group>
 
@@ -184,17 +191,17 @@ export default function SignUp() {
               value={companySize}
               onChange={(event) => setCompanySize(event.target.value)}
               type="text"
-              placeholder=""
+              placeholder="e.g. startup - scaleup - medium - large"
             />
           </Form.Group>
 
           <Form.Group>
-            <Form.Label>Technologies used at company?</Form.Label>
+            <Form.Label>Technologies used at company</Form.Label>
             <Form.Control
               value={techStack}
               onChange={(event) => setTechStack(event.target.value)}
               type="text"
-              placeholder=""
+              placeholder="e.g. javascript / python / vue / php"
             />
           </Form.Group>
 
@@ -204,7 +211,9 @@ export default function SignUp() {
               value={answer1}
               onChange={(event) => setAnswer1(event.target.value)}
               type="text"
-              placeholder=""
+              placeholder="e.g. LinkedIn / Friends / Codaisseur"
+              as="textarea"
+              bsPrefix="inputSize"
             />
           </Form.Group>
 
@@ -217,19 +226,21 @@ export default function SignUp() {
               value={answer2}
               onChange={(event) => setAnswer2(event.target.value)}
               type="text"
-              placeholder=""
+              placeholder="If not, go to next question"
+              as="textarea"
+              bsPrefix="inputSize"
             />
           </Form.Group>
 
           <Form.Group>
-            <Form.Label>
-              What do you think was the decisive factor for you to get hired?{" "}
-            </Form.Label>
+            <Form.Label>What do you think was the decisive factor? </Form.Label>
             <Form.Control
               value={answer3}
               onChange={(event) => setAnswer3(event.target.value)}
               type="text"
-              placeholder=""
+              placeholder="e.g. I had a good hair day"
+              as="textarea"
+              bsPrefix="inputSize"
             />
           </Form.Group>
 
@@ -239,42 +250,47 @@ export default function SignUp() {
               value={answer4}
               onChange={(event) => setAnswer4(event.target.value)}
               type="text"
-              placeholder=""
+              placeholder="e.g. staying calm during the interview"
+              as="textarea"
+              bsPrefix="inputSize"
             />
           </Form.Group>
 
           <Form.Group>
             <Form.Label>
-              What would you do differently next time (and why)?{" "}
+              What would you do differently next time and why?{" "}
             </Form.Label>
             <Form.Control
               value={answer5}
               onChange={(event) => setAnswer5(event.target.value)}
               type="text"
-              placeholder=""
+              placeholder="e.g. prepare better"
+              as="textarea"
+              bsPrefix="inputSize"
             />
           </Form.Group>
 
           <Form.Group>
-            <Form.Label>
-              What tips and/or do’s and don’ts do you have for future
-              students/graduates?{" "}
-            </Form.Label>
+            <Form.Label>What tips or do's and dont's do you have? </Form.Label>
             <Form.Control
               value={answer6}
               onChange={(event) => setAnswer6(event.target.value)}
               type="text"
-              placeholder=""
+              placeholder="share your secret sauce"
+              as="textarea"
+              bsPrefix="inputSize"
             />
           </Form.Group>
 
           <Form.Group>
             <Form.Label>What else would you like to share? </Form.Label>
             <Form.Control
+              bsPrefix="inputSize"
               value={answer7}
               onChange={(event) => setAnswer7(event.target.value)}
-              type="text"
-              placeholder=""
+              as="textarea"
+              placeholder="e.g. this can be anything, go crazy!
+            "
             />
           </Form.Group>
 
