@@ -57,3 +57,25 @@
   outline: 0;
   background-color: #f6464e;
 }
+
+.custom-card {
+  width: 60rem;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(186, 186, 186, 0.62);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(186, 186, 186, 0.62);
+  box-shadow: 10px 10px 5px 0px rgba(186, 186, 186, 0.62);
+  margin-bottom: 60px;
+  border-radius: 6px;
+  /* box-shadow: 0px 8px 36px #8c8c8c; */
+}
+
+.accordion-width {
+  width: 100%;
+  padding: 0;
+}
+
+.QA {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+}
