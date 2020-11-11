@@ -15,8 +15,8 @@ Or go straight to our website:
 
 - we used GitHub (workflow) version control with CI/CD
 - for communication we used Discord
-- at the beginning we started to work in the backend together because we decided to use TypeORM which was a new tool for all of us
-- in the frontend we devided features and everyone worked on his/her own task in a separate branch
+- at the beginning we started to work in the backend together (pair programming style), because we decided to use TypeORM which was a new tool for all of us
+- in the frontend we divided features and everyone worked on his/her own task in a separate branch
 
 ## Stack:
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"> <img height="30" src="https://cdn.iconscout.com/icon/free/png-512/postgresql-11-1175122.png">  <img height="30" src="https://avatars2.githubusercontent.com/u/20165699?s=400&v=4"> <img height="30" src="https://codeandunicorns.com/wp-content/uploads/2017/11/node-express.png"> <img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png">
